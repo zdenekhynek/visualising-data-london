@@ -9,7 +9,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="home">
-      <Image />
+      <div className="home-image">
+        <Image />
+      </div>
+      <div className="home-content">
+        <h1>Visualising Data London</h1>
+        <h2>The dataviz meetup</h2>
+      </div>
     </div>
   </Layout>
 );
