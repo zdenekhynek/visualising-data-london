@@ -1,0 +1,10 @@
+.home {}
+
+.home .gatsby-image-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+header, footer {
+  display: none;
+}
