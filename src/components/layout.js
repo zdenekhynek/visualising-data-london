@@ -847,6 +847,14 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </footer>
+
+      <Helmet>
+        <script src={"/js/jquery-3.3.1.min.js"} type="text/javascript" />
+        <script src={"/js/jquery-migrate-3.0.1.min.js"} type="text/javascript" />
+        <script src={"/js/bootstrap.min.js"} type="text/javascript" />
+        <script src={"/js/aos.js"} type="text/javascript" />
+        <script src={"/js/main.js"} type="text/javascript" />
+      </Helmet>
     </>
     // <>
     //   <Header siteTitle={data.site.siteMetadata.title} />
