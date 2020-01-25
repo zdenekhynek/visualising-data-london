@@ -21,7 +21,7 @@ export const Event = ({ data }) => {
           <h2 className="text-white">
             {data.title}
           </h2>
-          <span>London, UK</span>
+          <a href={data.meetupPage} target="_blank">Meetup page</a>
         </div>
       </div>
     </div>

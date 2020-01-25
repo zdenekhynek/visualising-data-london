@@ -45,12 +45,15 @@ export default IndexPage;
 
 export const query = graphql`
   query BlogPostsPageQuery {
-    allContentfulEvent(limit: 1000) {
+    allContentfulEvent(
+      sort: { fields: [date], order: DESC }
+    ) {
       edges {
         node {
           id
           title
           date
+          meetupPage
           description {
             id
           }

@@ -50,9 +50,6 @@ const Layout = ({ children }) => {
               <li>
                 <a href="#support">Support</a>
               </li>
-              {/* <li className="cta">
-                <a href="buy-tickets.html">Buy Tickets</a>
-              </li> */}
             </ul>
           </div>
         </div>
@@ -101,6 +98,7 @@ const Layout = ({ children }) => {
         </header>
       </div>
       <div className="site-section site-hero">
+        <div className="site-hero-background" />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-10">

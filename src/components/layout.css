@@ -1,0 +1,40 @@
+.site-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/placeholder-gradient.jpg");
+  background-size: cover;
+  background-position: bottom;
+  opacity: .3;
+}
+
+.site-hero h1 {
+  /* background: linear-gradient(to right, #d514ff, #3e05d2 70%); */
+  color: #d514ff !important;
+  background: none !important;
+  text-fill-color: initial !important;
+  -webkit-text-fill-color: initial !important;
+}
+
+.site-section-heading h2:after {
+  background: #d514ff !important; /*linear-gradient(to right, #d514ff, #3e05d2 70%) !important;*/
+}
+
+p a,
+.row a {
+  color: #d514ff;
+}
+
+.site-wrap a:hover {
+  color: #d514ff;
+}
+
+.site-navbar .site-navigation .site-menu > li > a:hover {
+  color: #d514ff !important;
+}
+
+.site-navbar .site-navigation .site-menu > li > a:after {
+  background: linear-gradient(to right, #d514ff, #d514ff 70%) !important;
+}
