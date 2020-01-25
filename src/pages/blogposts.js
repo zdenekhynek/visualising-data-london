@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const BlogPosts = ({ data }) => {
-  const blogPosts = data.allContentfulEvent.edges;
+  const blogPosts = data? data.allContentfulEvent.edges: [];
 
   return (
     <Layout>
