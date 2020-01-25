@@ -25,19 +25,19 @@ const BlogPosts = ({ data }) => {
 
 export default BlogPosts;
 
-export const query = graphql`
-  query BlogPostsPageQuery {
-    allContentfulEvent(limit: 1000) {
-      edges {
-        node {
-          id
-          title
-          description {
-            id
-          }
-          slug
-        }
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   query BlogPostsPageQuery {
+//     allContentfulEvent(limit: 1000) {
+//       edges {
+//         node {
+//           id
+//           title
+//           description {
+//             id
+//           }
+//           slug
+//         }
+//       }
+//     }
+//   }
+// `;

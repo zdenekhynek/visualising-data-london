@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import Image from "../components/image";
+import Event from "../components/event";
 import SEO from "../components/seo";
 
 import "../fonts/icomoon/style.css"
@@ -16,18 +17,46 @@ import "../fonts/flaticon/font/flaticon.css";
 import "../css/aos.css";
 import "../css/style.css";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="home">
-      <div className="home-image">
-        <Image />
-      </div>
-      <div className="home-content">
-        <h1>Visualising Data London</h1>
-        <h2>The dataviz meetup</h2>
-      </div>
-    </div>
-  </Layout>
-);
+const IndexPage = ({ data }) => {
+  console.log('data');
+  console.log(data);
+  const events = data.allContentfulEvent.edges;
+
+  return (
+    <Layout>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      {events.map(({ node: post }) => (
+        <Event data={post} />
+      ))}
+      {/* <div className="home">
+        <div className="home-image">
+          <Image />
+        </div>
+        <div className="home-content">
+          <h1>Visualising Data London</h1>
+          <h2>The dataviz meetup</h2>
+        </div>
+      </div> */}
+    </Layout>
+  );
+};
+
 export default IndexPage;
+
+export const query = graphql`
+  query BlogPostsPageQuery {
+    allContentfulEvent(limit: 1000) {
+      edges {
+        node {
+          id
+          title
+          date
+          description {
+            id
+          }
+          slug
+        }
+      }
+    }
+  }
+`;
