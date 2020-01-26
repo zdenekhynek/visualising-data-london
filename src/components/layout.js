@@ -159,7 +159,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </div>
-      <div id="participate" lassName="site-section">
+      <div id="participate" className="site-section">
         <div className="container">
           <div className="row mb-5">
             <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up">
@@ -167,7 +167,7 @@ const Layout = ({ children }) => {
                 <h2>Participate</h2>
               </div>
             </div>
-            <div class="col-lg-6 mt-5 pl-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-lg-6 mt-5 pl-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
               <p>
                 Would you like to be a speaker at one of our next events? Great! Please let us 
                 know all about you and your talk <a href="https://forms.gle/gSL5iGwiiKSsuG1A8" target="_blank">here</a>.
@@ -184,7 +184,7 @@ const Layout = ({ children }) => {
                 <h2>Support</h2>
               </div>
             </div>
-            <div class="col-lg-6 mt-5 pl-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-lg-6 mt-5 pl-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
               <p>
                 Our meetup is looking for a new sponsor to help cover the cost of our events.
                 If you have a suggestion for potential supporters, please reach out to info@visualisingdata.london.
@@ -207,11 +207,11 @@ const Layout = ({ children }) => {
       </footer>
 
       <Helmet>
-        <script src={"/js/jquery-3.3.1.min.js"} type="text/javascript" />
-        <script src={"/js/jquery-migrate-3.0.1.min.js"} type="text/javascript" />
-        <script src={"/js/bootstrap.min.js"} type="text/javascript" />
-        <script src={"/js/aos.js"} type="text/javascript" />
-        <script src={"/js/main.js"} type="text/javascript" />
+        <script defer src={"/js/jquery-3.3.1.min.js"} type="text/javascript" />
+        <script defer src={"/js/jquery-migrate-3.0.1.min.js"} type="text/javascript" />
+        <script defer src={"/js/bootstrap.min.js"} type="text/javascript" />
+        <script defer src={"/js/aos.js"} type="text/javascript" />
+        <script defer src={"/js/main.js"} type="text/javascript" />
       </Helmet>
     </>
     // <>
