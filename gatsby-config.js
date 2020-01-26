@@ -33,7 +33,15 @@ module.exports = {
         spaceId: `e5vau0i5qp9k`,
         accessToken: `4rlR2NYtHfmPq_s4CROObb4Ht12wG_znTd2jXVSQWKA`
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-156887999-1',
+        anonymize: true,
+      }
     }
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
