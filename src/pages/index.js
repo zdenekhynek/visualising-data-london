@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
@@ -6,7 +7,7 @@ import Image from "../components/image";
 import Event from "../components/event";
 import SEO from "../components/seo";
 
-import "../fonts/icomoon/style.css"
+import "../fonts/icomoon/style.css";
 import "../css/bootstrap.min.css";
 import "../css/magnific-popup.css";
 // import "../css/jquery-ui.css";
@@ -18,7 +19,7 @@ import "../css/aos.css";
 import "../css/style.css";
 
 const IndexPage = ({ data }) => {
-  console.log('data');
+  console.log("data");
   console.log(data);
   const events = data.allContentfulEvent.edges;
 
@@ -43,20 +44,27 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage;
 
+// export const query = graphql`
+//   query BlogPostsPageQuery {
+//     allContentfulAsset {
+//       nodes {
+//         contentful_id
+//         title
+//         description
+//       }
+//     }
+//   }
+// `;
+
 export const query = graphql`
   query BlogPostsPageQuery {
-    allContentfulEvent(
-      sort: { fields: [date], order: DESC }
-    ) {
+    allContentfulEvent(sort: {date: DESC}) {
       edges {
         node {
           id
           title
           date
           meetupPage
-          description {
-            id
-          }
           slug
         }
       }

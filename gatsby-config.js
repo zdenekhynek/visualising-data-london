@@ -5,6 +5,8 @@ module.exports = {
     author: `Zdenek Hynek`,
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

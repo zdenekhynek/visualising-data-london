@@ -24,9 +24,6 @@ export const pageQuery = graphql`
     contentfulEvent(slug: { eq: $slug }) {
       title
       slug
-      description {
-        id
-      }
     }
   }
 `;
