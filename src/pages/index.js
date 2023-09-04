@@ -19,8 +19,6 @@ import "../css/aos.css";
 import "../css/style.css";
 
 const IndexPage = ({ data }) => {
-  console.log("data");
-  console.log(data);
   const events = data.allContentfulEvent.edges;
 
   return (

@@ -121,7 +121,7 @@ const Layout = ({ children }) => {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Data-design meetup
+                Information design meetup
               </span>
               {/* <a
                 href="#"
@@ -149,7 +149,7 @@ const Layout = ({ children }) => {
               data-aos-delay="100"
             >
               <p>
-                Meetups are organised every 3 months and hosted in the heart of Shoreditch, London, UK.
+                Meetups are organised semiregularly in Central London, UK.
               </p>
             </div>
           </div>
@@ -187,7 +187,7 @@ const Layout = ({ children }) => {
             <div className="col-lg-6 mt-5 pl-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
               <p>
                 Our meetup is looking for a new sponsor to help cover the cost of our events.
-                If you have a suggestion for potential supporters, please reach out to info@visualisingdata.london.
+                If you have a suggestion for potential supporters, please reach out to zdenek.hynek@gmail.com.
               </p>
             </div>
           </div>
@@ -199,7 +199,7 @@ const Layout = ({ children }) => {
           <div className="row">
             <div className="col-md-12 text-center">
               <p>
-                For any questions, thoughts or suggestions, please contact info@visualisingdata.london.
+                For any questions, thoughts or suggestions, please contact zdenek.hynek@gmail.com.
               </p>
             </div>
           </div>
