@@ -40,7 +40,6 @@ const EventPost = ({ data }) => {
     meetupPage,
     streamLink,
   } = data.contentfulEvent;
-  console.log("data", data);
   const monthDate = format(new Date(date), "dd.MM");
   const yearDate = format(new Date(date), "yyyy");
 
@@ -69,7 +68,9 @@ const EventPost = ({ data }) => {
               Meetup page
             </a>
           )}
-          <Link to="/" className="back-link">Back to events</Link>
+          <Link to="/" className="back-link">
+            Back to events
+          </Link>
         </div>
       </div>
     </Layout>
