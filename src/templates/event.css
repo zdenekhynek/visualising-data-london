@@ -1,0 +1,70 @@
+.event-hero {
+}
+
+@media (min-width: 768px) {
+  .event-hero {
+    padding: 10rem 0 6rem;
+  }
+}
+
+.event-hero h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, #c70039, #ff5733 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d514ff !important;
+  background: none !important;
+  text-fill-color: initial !important;
+  -webkit-text-fill-color: initial !important;
+}
+@media (min-width: 992px) {
+  .event-hero h1 {
+    max-width: 55rem;
+    font-size: 4rem;
+  }
+}
+
+.event-date {
+  padding-top: 3rem;
+}
+
+.event-section-heading {
+  position: relative;
+}
+
+.event-section-heading h2 {
+  position: relative;
+  font-size: 2.5rem;
+  color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .event-section-heading h2 {
+    font-size: 2rem;
+  }
+}
+
+.event-section-heading h2:after {
+  content: "";
+  left: -50px;
+  bottom: 0;
+  position: absolute;
+  width: 75px;
+  height: 2px;
+  background: #d514ff !important; /*linear-gradient(to right, #d514ff, #3e05d2 70%) !important;*/
+}
+
+.event-links {
+  margin: 2rem 0 10rem;
+}
+
+.event-links a {
+  display: block;
+  color: #d514ff
+}
+
+.back-link {
+  margin-top: 4rem;
+}

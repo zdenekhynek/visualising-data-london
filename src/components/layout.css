@@ -27,6 +27,11 @@ p a,
   color: #d514ff;
 }
 
+a:hover {
+  color: #d514ff !important;
+  text-decoration: underline !important;
+}
+
 .site-wrap a:hover {
   color: #d514ff;
 }

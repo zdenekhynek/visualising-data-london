@@ -10,8 +10,8 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Helmet from "react-helmet";
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header";
+import "./layout.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -42,13 +42,13 @@ const Layout = ({ children }) => {
           <div className="site-mobile-menu-body">
             <ul className="site-nav-wrap">
               <li>
-                <a href="#events">Events</a>
+                <a href="/#events">Events</a>
               </li>
               <li>
-                <a href="#participate">Participate</a>
+                <a href="/#participate">Participate</a>
               </li>
               <li>
-                <a href="#support">Support</a>
+                <a href="/#support">Support</a>
               </li>
             </ul>
           </div>
@@ -71,13 +71,13 @@ const Layout = ({ children }) => {
                 >
                   <ul className="site-menu js-clone-nav mx-auto d-none d-lg-block">
                     <li>
-                      <a href="#events">Events</a>
+                      <a href="/#events">Events</a>
                     </li>
                     <li>
-                      <a href="#participate">Participate</a>
+                      <a href="/#participate">Participate</a>
                     </li>
                     <li>
-                      <a href="#support">Support</a>
+                      <a href="/#support">Support</a>
                     </li>
                   </ul>
                 </nav>
@@ -97,118 +97,26 @@ const Layout = ({ children }) => {
           </div>
         </header>
       </div>
-      <div className="site-section site-hero">
-        <div className="site-hero-background" />
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-10">
-              <span
-                className="d-block mb-3 caption aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                
-              </span>
-              <h1
-                className="d-block mb-4 aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                Visualising Data London
-              </h1>
-              <span
-                className="d-block mb-5 caption aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                Information design meetup
-              </span>
-              {/* <a
-                href="#"
-                className="btn-custom aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <span>Buy Tickets</span>
-              </a> */}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="events" className="site-section">
-        <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up">
-              <div className="site-section-heading">
-                <h2>Events</h2>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 mt-5 pl-lg-5 aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <p>
-                Meetups are organised semiregularly in Central London, UK.
-              </p>
-            </div>
-          </div>
-
-          <div className="row align-items-stretch program">
-            {children}
-          </div>
-        </div>
-      </div>
-      <div id="participate" className="site-section">
-        <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up">
-              <div className="site-section-heading">
-                <h2>Participate</h2>
-              </div>
-            </div>
-            <div className="col-lg-6 mt-5 pl-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-              <p>
-                Would you like to be a speaker at one of our next events? Great! Please let us 
-                know all about you and your talk <a href="https://forms.gle/gSL5iGwiiKSsuG1A8" target="_blank">here</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="support" className="site-section">
-        <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-4 aos-init aos-animate" data-aos="fade-up">
-              <div className="site-section-heading">
-                <h2>Support</h2>
-              </div>
-            </div>
-            <div className="col-lg-6 mt-5 pl-lg-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-              <p>
-                Our meetup is looking for a new sponsor to help cover the cost of our events.
-                If you have a suggestion for potential supporters, please reach out to zdenek.hynek@gmail.com.
-              </p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
+      {children}
       <footer id="about" className="site-footer">
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
               <p>
-                For any questions, thoughts or suggestions, please contact zdenek.hynek@gmail.com.
+                For any questions, thoughts or suggestions, please contact
+                zdenek.hynek@gmail.com.
               </p>
             </div>
           </div>
         </div>
       </footer>
-
       <Helmet>
         <script defer src={"/js/jquery-3.3.1.min.js"} type="text/javascript" />
-        <script defer src={"/js/jquery-migrate-3.0.1.min.js"} type="text/javascript" />
+        <script
+          defer
+          src={"/js/jquery-migrate-3.0.1.min.js"}
+          type="text/javascript"
+        />
         <script defer src={"/js/bootstrap.min.js"} type="text/javascript" />
         <script defer src={"/js/aos.js"} type="text/javascript" />
         <script defer src={"/js/main.js"} type="text/javascript" />
@@ -223,11 +131,11 @@ const Layout = ({ children }) => {
     //     </footer>
     //   </div>
     // </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

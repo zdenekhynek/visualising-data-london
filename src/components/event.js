@@ -1,12 +1,14 @@
 import React from "react";
 
-import { format } from 'date-fns';
+import { format } from "date-fns";
 
 export const Event = ({ data }) => {
   const [month, year] = data.title.split(" ");
-  const monthDate = format(new Date(data.date), 'dd.MM')
-  const yearDate = format(new Date(data.date), 'yyyy')
-  
+  const monthDate = format(new Date(data.date), "dd.MM");
+  const yearDate = format(new Date(data.date), "yyyy");
+
+  console.log("data", data);
+
   return (
     <div
       className="col-12 border-top border-bottom py-5 aos-init aos-animate"
@@ -18,14 +20,12 @@ export const Event = ({ data }) => {
           <span className="h4">{monthDate}</span>.<span>{yearDate}</span>
         </div>
         <div className="col-md-9">
-          <h2 className="text-white">
-            {data.title}
-          </h2>
-          <a href={data.meetupPage} target="_blank">Meetup page</a>
+          <h2 className="text-white">{data.title}</h2>
+          <a href={`/events/${data.slug}`}>More details</a>
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Event;

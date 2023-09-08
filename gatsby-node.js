@@ -25,22 +25,23 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
+  )
+    .then(result => {
       if (result.errors) {
-        console.log("Error retrieving contentful data",      result.errors);
+        console.log("Error retrieving contentful data", result.errors);
       }
       // Resolve the paths to our template
-      const blogPostTemplate = path.resolve("./src/templates/blogpost.js");
-      
+      const blogPostTemplate = path.resolve("./src/templates/event.js");
+
       // Then for each result we create a page.
       result.data.allContentfulEvent.edges.forEach(edge => {
         createPage({
-          path: `/blogpost/${edge.node.slug}/`,
+          path: `/events/${edge.node.slug}/`,
           component: slash(blogPostTemplate),
           context: {
-	    slug: edge.node.slug,
-            id: edge.node.id
-          }
+            slug: edge.node.slug,
+            id: edge.node.id,
+          },
         });
       });
     })
