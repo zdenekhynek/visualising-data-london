@@ -112,11 +112,11 @@ const Layout = ({ children }) => {
       </footer>
       <Helmet>
         <script defer src={"/js/jquery-3.3.1.min.js"} type="text/javascript" />
-        <script
+        {/* <script
           defer
           src={"/js/jquery-migrate-3.0.1.min.js"}
           type="text/javascript"
-        />
+        /> */}
         <script defer src={"/js/bootstrap.min.js"} type="text/javascript" />
         <script defer src={"/js/aos.js"} type="text/javascript" />
         <script defer src={"/js/main.js"} type="text/javascript" />
