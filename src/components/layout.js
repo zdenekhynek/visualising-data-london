@@ -116,9 +116,9 @@ const Layout = ({ children }) => {
           defer
           src={"/js/jquery-migrate-3.0.1.min.js"}
           type="text/javascript"
-        /> */}
+        />
         <script defer src={"/js/bootstrap.min.js"} type="text/javascript" />
-        <script defer src={"/js/aos.js"} type="text/javascript" />
+        <script defer src={"/js/aos.js"} type="text/javascript" /> */}
         <script defer src={"/js/main.js"} type="text/javascript" />
       </Helmet>
     </>

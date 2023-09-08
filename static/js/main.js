@@ -1,5 +1,5 @@
-jQuery(document).ready(function($) {
-  "use strict";
+window.onload = function() {
+  var $ = jQuery;
 
   $("body").on("click", ".js-menu-toggle", function(e) {
     var $this = $(this);
@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
       }
     }
   });
-});
+};
 
 //  AOS.init({
 //  	duration: 800,
