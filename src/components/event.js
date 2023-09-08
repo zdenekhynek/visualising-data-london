@@ -7,8 +7,6 @@ export const Event = ({ data }) => {
   const monthDate = format(new Date(data.date), "dd.MM");
   const yearDate = format(new Date(data.date), "yyyy");
 
-  console.log("data", data);
-
   return (
     <div
       className="col-12 border-top border-bottom py-5 aos-init aos-animate"
